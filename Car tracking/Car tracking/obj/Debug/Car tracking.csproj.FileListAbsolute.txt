@@ -1,0 +1,9 @@
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\bin\Debug\Car tracking.exe.config
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car tracking.csprojResolveAssemblyReference.cache
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car_tracking.Form1.resources
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car_tracking.Properties.Resources.resources
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car tracking.csproj.GenerateResource.Cache
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\bin\Debug\Car tracking.exe
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\bin\Debug\Car tracking.pdb
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car tracking.exe
+c:\users\wsr_2\documents\visual studio 2015\Projects\Car tracking\Car tracking\obj\Debug\Car tracking.pdb
