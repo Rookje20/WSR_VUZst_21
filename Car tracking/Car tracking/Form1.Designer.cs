@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -115,6 +114,13 @@
             this.pictureBox79 = new System.Windows.Forms.PictureBox();
             this.pictureBox80 = new System.Windows.Forms.PictureBox();
             this.pictureBox81 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox82 = new System.Windows.Forms.PictureBox();
+            this.pictureBox83 = new System.Windows.Forms.PictureBox();
+            this.pictureBox84 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox85 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox60)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox59)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox58)).BeginInit();
@@ -196,6 +202,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -208,19 +218,9 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Car Tracking";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(682, 160);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Добавить Объект";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(804, 160);
+            this.button2.Location = new System.Drawing.Point(807, 258);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(99, 42);
             this.button2.TabIndex = 3;
@@ -235,6 +235,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "Настройки";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -360,7 +361,7 @@
             // 
             this.pictureBox49.BackgroundImage = global::Car_tracking.Properties.Resources.Pedestrain;
             this.pictureBox49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox49.Location = new System.Drawing.Point(270, 19);
+            this.pictureBox49.Location = new System.Drawing.Point(270, 12);
             this.pictureBox49.Name = "pictureBox49";
             this.pictureBox49.Size = new System.Drawing.Size(18, 26);
             this.pictureBox49.TabIndex = 58;
@@ -1112,7 +1113,7 @@
             // 
             this.pictureBox80.BackgroundImage = global::Car_tracking.Properties.Resources.RFstart;
             this.pictureBox80.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox80.Location = new System.Drawing.Point(178, 576);
+            this.pictureBox80.Location = new System.Drawing.Point(179, 576);
             this.pictureBox80.Name = "pictureBox80";
             this.pictureBox80.Size = new System.Drawing.Size(36, 39);
             this.pictureBox80.TabIndex = 89;
@@ -1123,11 +1124,93 @@
             this.pictureBox81.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.pictureBox81.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox81.BackgroundImage")));
             this.pictureBox81.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox81.Location = new System.Drawing.Point(140, 573);
+            this.pictureBox81.Location = new System.Drawing.Point(140, 571);
             this.pictureBox81.Name = "pictureBox81";
             this.pictureBox81.Size = new System.Drawing.Size(40, 44);
             this.pictureBox81.TabIndex = 90;
             this.pictureBox81.TabStop = false;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ImeMode = System.Windows.Forms.ImeMode.On;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Светофор",
+            "Зебра",
+            "Машина",
+            "Пешеход",
+            "\"Движение запрещено\""});
+            this.comboBox1.Location = new System.Drawing.Point(682, 172);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(88, 21);
+            this.comboBox1.TabIndex = 92;
+            this.comboBox1.Text = "Объекты";
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(735, 366);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 93;
+            this.label2.Text = "label2";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pictureBox82
+            // 
+            this.pictureBox82.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox82.BackgroundImage = global::Car_tracking.Properties.Resources.Cright;
+            this.pictureBox82.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox82.Location = new System.Drawing.Point(255, 398);
+            this.pictureBox82.Name = "pictureBox82";
+            this.pictureBox82.Size = new System.Drawing.Size(35, 23);
+            this.pictureBox82.TabIndex = 94;
+            this.pictureBox82.TabStop = false;
+            // 
+            // pictureBox83
+            // 
+            this.pictureBox83.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox83.BackgroundImage = global::Car_tracking.Properties.Resources.Cright;
+            this.pictureBox83.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox83.Location = new System.Drawing.Point(417, 225);
+            this.pictureBox83.Name = "pictureBox83";
+            this.pictureBox83.Size = new System.Drawing.Size(35, 23);
+            this.pictureBox83.TabIndex = 95;
+            this.pictureBox83.TabStop = false;
+            // 
+            // pictureBox84
+            // 
+            this.pictureBox84.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox84.BackgroundImage = global::Car_tracking.Properties.Resources.Cright;
+            this.pictureBox84.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox84.Location = new System.Drawing.Point(32, 41);
+            this.pictureBox84.Name = "pictureBox84";
+            this.pictureBox84.Size = new System.Drawing.Size(35, 23);
+            this.pictureBox84.TabIndex = 96;
+            this.pictureBox84.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(807, 160);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(99, 42);
+            this.button1.TabIndex = 97;
+            this.button1.Text = "Добавить объект";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // pictureBox85
+            // 
+            this.pictureBox85.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.pictureBox85.BackgroundImage = global::Car_tracking.Properties.Resources.BCvertical;
+            this.pictureBox85.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox85.Location = new System.Drawing.Point(190, 582);
+            this.pictureBox85.Name = "pictureBox85";
+            this.pictureBox85.Size = new System.Drawing.Size(20, 30);
+            this.pictureBox85.TabIndex = 98;
+            this.pictureBox85.TabStop = false;
             // 
             // Form1
             // 
@@ -1135,6 +1218,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(956, 668);
+            this.Controls.Add(this.pictureBox85);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox84);
+            this.Controls.Add(this.pictureBox83);
+            this.Controls.Add(this.pictureBox82);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox81);
             this.Controls.Add(this.pictureBox80);
             this.Controls.Add(this.pictureBox79);
@@ -1219,7 +1309,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
@@ -1306,6 +1395,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox79)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox80)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox81)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox82)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox83)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox84)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox85)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1314,7 +1407,6 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -1399,6 +1491,13 @@
         private System.Windows.Forms.PictureBox pictureBox79;
         private System.Windows.Forms.PictureBox pictureBox80;
         private System.Windows.Forms.PictureBox pictureBox81;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox82;
+        private System.Windows.Forms.PictureBox pictureBox83;
+        private System.Windows.Forms.PictureBox pictureBox84;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox85;
     }
 }
 
