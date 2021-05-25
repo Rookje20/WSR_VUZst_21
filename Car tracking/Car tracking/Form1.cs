@@ -12,12 +12,10 @@ namespace Car_tracking
 {
     public partial class Form1 : Form
     {
-        public  Form1()
+        public Form1()
         {
             InitializeComponent();
-          
-                label2.Text = Convert.ToString(MousePosition);
-        
+         
               
         }
 
@@ -81,7 +79,7 @@ namespace Car_tracking
 
         private void label2_Click(object sender, EventArgs e)
         {
-            
+            label2.Text = Convert.ToString(MousePosition);
         }
 
         private void button3_Click(object sender, EventArgs e)
